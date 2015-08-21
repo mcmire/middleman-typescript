@@ -106,7 +106,7 @@ module Middleman
           f.write result.js
         end
       else
-        app.logger.info "TypeScript: #{result.stderr}"
+        app.logger.info "TypeScript: #{result.stdout} #{result.stderr}"
       end
     end
   end
