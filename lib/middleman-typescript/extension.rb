@@ -32,7 +32,7 @@ module Middleman
               f.write result.js
             end
           else
-            logger.info "TypeScript: #{result.stderr}"
+            logger.info "TypeScript: #{result.stdout} #{result.stderr}"
           end
         end
 
